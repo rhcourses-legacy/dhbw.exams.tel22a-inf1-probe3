@@ -17,21 +17,6 @@ type Matrix struct {
 // so dass eine Multiplikation möglich ist.
 func (m1 Matrix) Mult(m2 Matrix) Matrix {
 	result := Matrix{Rows: [][]int{}}
-	// BEGIN-SOLUTION
-	resultRows := len(m1.Rows)
-	resultColumns := len(m2.Rows[0])
-	m1Columns := len(m1.Rows[0]) // auch == m2Rows
-	for range m1.Rows {
-		result.Rows = append(result.Rows, make([]int, resultColumns))
-	}
-
-	for i := 0; i < resultRows; i++ {
-		for j := 0; j < resultColumns; j++ {
-			for n := 0; n < m1Columns; n++ {
-				result.Rows[i][j] += m1.Rows[i][n] * m2.Rows[n][j]
-			}
-		}
-	}
-	// END-SOLUTION
+	// TODO
 	return result
 }

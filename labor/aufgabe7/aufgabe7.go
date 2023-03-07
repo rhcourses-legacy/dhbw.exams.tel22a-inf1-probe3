@@ -12,19 +12,6 @@ BEWERTUNG:
 // Gehen Sie davon aus, dass jedes Element in jeder Liste höchstens einmal vorkommt.
 // Die Ergebnisliste soll keine Duplikate enthalten.
 func Join(l1, l2 []int) []int {
-	// BEGIN-SOLUTION
-	result := append([]int{}, l1...)
-	for _, el2 := range l2 {
-		found := false
-		for _, elr := range result {
-			if el2 == elr {
-				found = true
-			}
-		}
-		if !found {
-			result = append(result, el2)
-		}
-	}
-	return result
-	// END-SOLUTION
+	// TODO
+	return []int{}
 }

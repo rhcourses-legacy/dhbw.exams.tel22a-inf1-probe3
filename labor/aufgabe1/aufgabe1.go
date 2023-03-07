@@ -12,12 +12,6 @@ HINWEIS: Die Funktion HasPrefix aus dem Package strings könnte hilfreich sein.
 // ContainsPrefix erwartet eine Liste von Strings sowie einen String s.
 // Die Funktion liefert true, falls einer der Strings aus der Liste mit s beginnt.
 func ContainsPrefix(list []string, s string) bool {
-	// BEGIN-SOLUTION
-	for _, val := range list {
-		if len(val) >= len(s) && val[:len(s)] == s {
-			return true
-		}
-	}
-	// END-SOLUTION
+	// TODO
 	return false
 }

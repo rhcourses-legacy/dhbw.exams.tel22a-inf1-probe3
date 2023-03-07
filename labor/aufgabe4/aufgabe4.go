@@ -14,13 +14,6 @@ BEWERTUNG:
 
 // Equal erwartet zwei int-Parameter x und y und liefert true, falls x < y.
 func Equal(x, y int) bool {
-	// BEGIN-SOLUTION
-	if x == 0 {
-		return y == 0
-	}
-	if y == 0 {
-		return false
-	}
-	return Equal(x-1, y-1)
-	// END-SOLUTION
+	// TODO
+	return false
 }
